@@ -212,13 +212,146 @@
     </div>
 </div>
 
+<div class="min-h-screen px-4 mt-20 flex justify-center">
+  <div class="flex flex-col items-center w-full">
+    <!-- Título e descrição no topo -->
+    <div class="text-center mb-14">
+      <h1 class="text-blue-500 text-3xl md:text-4xl font-bold mb-4" id="agendamento">
+        Especialistas
+      </h1>
+      <p class="text-gray-500">Especialistas disponíveis na clínica</p>
+    </div>
+
+    <!-- 3 tópicos lado a lado -->
+    <div class="flex flex-col md:flex-row gap-14 justify-center w-full mt-20">
+      <div class="flex flex-col justify-center items-center text-center">
+        <div class="w-20 h-20 bg-blue-500 rounded-full"></div>
+        <div class="text-md text-blue-500 mt-4">Lorem ipsum dolor nm recusandae laudantium pariatur, quisquam excepturi aliquam. Explicabo.</div>
+      </div>
+      <div class="flex flex-col justify-center items-center text-center">
+        <div class="w-20 h-20 bg-blue-500 rounded-full"></div>
+        <div class="text-md text-blue-500 mt-4">Lorem ipsum dolor nm recusandae laudantium pariatur, quisquam excepturi aliquam. Explicabo.</div>
+      </div>
+      <div class="flex flex-col justify-center items-center text-center">
+        <div class="w-20 h-20 bg-blue-500 rounded-full"></div>
+        <div class="text-md text-blue-500 mt-4">Lorem ipsum dolor nm recusandae laudantium pariatur, quisquam excepturi aliquam. Explicabo.</div>
+      </div>
+    </div>
+
+    <div class="w-full mt-10">
+      <div class="relative w-full max-w-7xl mx-auto mt-10">
+        <!-- Carrossel -->
+        <div class="flex overflow-x-hidden">
+          <!-- Lista de Cards -->
+          <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+            <!-- Card 1 -->
+            <div class="flex-shrink-0 w-80 h-80 bg-blue-500 text-white rounded-lg shadow-lg m-4 p-4">
+              <h3 class="text-xl font-bold">Card 1</h3>
+              <p>Conteúdo do card 1.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="flex-shrink-0 w-80 h-80 bg-green-500 text-white rounded-lg shadow-lg m-4 p-4">
+              <h3 class="text-xl font-bold">Card 2</h3>
+              <p>Conteúdo do card 2.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="flex-shrink-0 w-80 h-80 bg-red-500 text-white rounded-lg shadow-lg m-4 p-4">
+              <h3 class="text-xl font-bold">Card 3</h3>
+              <p>Conteúdo do card 3.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="flex-shrink-0 w-80 h-80 bg-yellow-500 text-white rounded-lg shadow-lg m-4 p-4">
+              <h3 class="text-xl font-bold">Card 4</h3>
+              <p>Conteúdo do card 4.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="flex-shrink-0 w-80 h-80 bg-purple-500 text-white rounded-lg shadow-lg m-4 p-4">
+              <h3 class="text-xl font-bold">Card 5</h3>
+              <p>Conteúdo do card 5.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="flex-shrink-0 w-80 h-80 bg-pink-500 text-white rounded-lg shadow-lg m-4 p-4">
+              <h3 class="text-xl font-bold">Card 6</h3>
+              <p>Conteúdo do card 6.</p>
+            </div>
+            <!-- Card 7 -->
+            <div class="flex-shrink-0 w-80 h-80 bg-indigo-500 text-white rounded-lg shadow-lg m-4 p-4">
+              <h3 class="text-xl font-bold">Card 7</h3>
+              <p>Conteúdo do card 7.</p>
+            </div>
+            <!-- Card 8 -->
+            <div class="flex-shrink-0 w-80 h-80 bg-teal-500 text-white rounded-lg shadow-lg m-4 p-4">
+              <h3 class="text-xl font-bold">Card 8</h3>
+              <p>Conteúdo do card 8.</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Botões de navegação -->
+        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white py-4 px-5 rounded-full" id="prevBtn">
+          <span class="material-icons"><</span>
+        </button>
+        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white  py-4 px-5  rounded-full" id="nextBtn">
+          <span class="material-icons">></span>
+        </button>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+<div id="contato" class="min-h-screen pattern bg-blue-500   w-full flex justify-center items-center flex-col -mt-5 md:mt-10">
+  <div class="flex justify-center flex-col">
+    <h1 class="text-blue-500 text-3xl md:text-4xl font-bold mb-1 md:mb-4 ">
+      Entre em contato
+    </h1>
+    <p class="text-white mb-14 text-center">Formulario para contato</p>
+  </div>
+  <div class="md:w-1/2 w-2/3">
+    
+    <label for="input-group-1" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white"></label>
+    <div class="relative md:mb-8 mb-6">
+      <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
+        <img src="assets/user-form.png" class="w-6" alt="">
+      </div>
+      <input type="text" id="input-group-1" class="p-4 bg-blue-500 border border-white text-gray-900 text-sm rounded-2xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-12 pl-14 dark:border-yellow-300 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nome">
+    </div>
+  
+    <label for="input-group-2" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white"></label>
+    <div class="relative md:mb-8 mb-6">
+      <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
+        <img src="assets/email-form.png" class="w-6" alt="">
+      </div>
+      <input type="email" id="input-group-2" class="p-4 bg-blue-500 border border-white text-gray-900 text-sm rounded-2xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-12 pl-14 dark:border-yellow-300 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="SeuEmail@gmail.com">
+    </div>
+
+    <label for="input-group-3" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white"></label>
+    <div class="relative md:mb-8 mb-6">
+      <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
+        <img src="assets/phone-form.png" class="w-6" alt="">
+      </div>
+      <input type="tel" id="input-group-3" class="p-4 bg-blue-500 border border-white text-gray-900 text-sm rounded-2xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-12 pl-14 dark:border-yellow-300 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="(00) 00000-0000" pattern="^\(\d{3}\) \d{3}-\d{4}$">
+    </div>
+
+    <!-- Botão de Enviar -->
+    <div class="relative mb-8">
+      <button type="submit" class="w-full bg-white p-4 text-black font-bold rounded-2xl hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 focus:outline-none dark:bg-yellow-500 dark:hover:bg-yellow-600 dark:focus:ring-yellow-400">
+        Enviar
+      </button>
+    </div>
+  </div>
+</div>
+
+
 
 
 
     
     
 
-<footer class="bg-blue-500  shadow dark:bg-blue-500 ">
+<footer class="bg-blue-500  shadow dark:bg-blue-500 mt-20">
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
     <span class="text-sm  sm:text-center text-black">© 2023 <a href="" class="hover:underline">DrBruno™</a>. All Rights Reserved.
   </span>
@@ -245,7 +378,7 @@
     
 
   </div>
-  <script src="./js/navbar"></script>
+  <script src="./js/script"></script>
   <!-- JavaScript para abrir/fechar o menu -->
 </body>
 </html>
