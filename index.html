@@ -81,7 +81,7 @@
 
   <div class="relative grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Card 1 -->
-      <div class=" border-2 border-blue-500 justify-center rounded-xl p-6 text-center flex flex-col py-20 max-h-[700px] max-w-[400px] overflow-hidden bg-white">
+      <div class=" border-2 border-blue-500 justify-center rounded-xl p-6 text-center flex flex-col py-20 max-h-[400px] max-w-[400px] overflow-hidden bg-white">
           <img src="assets/osso-cion.png" alt="Image 2" class="w-10 mx-auto mb-5">
           <h3 class="text-3xl font-semibold text-gray-900 mt-4">Título 1</h3>
           <p class="text-gray-600 mt-2 text-md">
@@ -90,7 +90,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class=" border-2 border-blue-500 justify-center rounded-xl p-6 text-center flex flex-col py-20 max-h-[600px]  max-w-[400px] overflow-hidden bg-white">
+      <div class=" border-2 border-blue-500 justify-center rounded-xl p-6 text-center flex flex-col py-20 max-h-[400px]  max-w-[400px] overflow-hidden bg-white">
           <img src="assets/osso-cion.png" alt="Image 2" class="w-10 mx-auto mb-5">
           <h3 class="text-3xl font-semibold text-gray-900 mt-4">Título 2</h3>
           <p class="text-gray-600 mt-2 text-md">
@@ -99,7 +99,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class=" border-2 border-blue-500 justify-center rounded-xl p-6 text-center flex flex-col py-20 max-h-[600px] max-w-[400px] overflow-hidden bg-white">
+      <div class=" border-2 border-blue-500 justify-center rounded-xl p-6 text-center flex flex-col py-20 max-h-[400px] max-w-[400px] overflow-hidden bg-white">
           <img src="assets/osso-cion.png" alt="Image 2" class="w-10 mx-auto mb-5">
           <h3 class="text-3xl font-semibold text-gray-900 mt-4">Título 3</h3>
           <p class="text-gray-600 mt-2 text-md">
@@ -184,27 +184,27 @@
   
 </div>
 
-<div class=" h-screen flex bg-blue-600 w-full items-center  justify-center mt-32">
+<div class=" min-h-screen flex bg-blue-600 w-full items-center flex-col md:flex-row  justify-center mt-32">
     <div class="w-1/2 p-5 flex justify-center items-center">
        <div class="w-full h-96 bg-gray-100"></div>
     </div>
     <div class="1/2">
-      <div class="flex flex-col p-5 flex">
+      <div class="flex flex-col p-5 flex ">
         <h1 class="text-4xl text-white ">Cuidado especializado para voce e sua familia</h1>
         <p class="text-md mt-6 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maiores nisi ducimus amet velit minus praesentium facilis dolores expedita nostrum incidunt tempore provident corporis inventore delectus facere, ipsum numquam minima! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam doloribus commodi blanditiis quos amet tempora, iusto sapiente totam, voluptatibus omnis quidem inventore possimus! Doloribus accusantium quam fugiat voluptatum itaque! Alias?</p>
         <div class="flex mt-10">
-          <div class="flex">
+          <div class="flex flex-col md:flex-row gap-5">
             <div class="bg-gray-100 w-14 h-14 rounded-full"></div>
             <div class="flex flex-col">
               <h1 class="text-xl text-white ">teste</h1>
-              <p class="text-md w-2/3">Lorem ipsum dolor sit amet consectetur, adipit. Modi, voluptates porro accusantium</p>
+              <p class="text-sm md:text-md w-full md:w-3/4">Lorem ipsum dolor sit amet consectetur, adipit. Modi, voluptates porro accusantium</p>
             </div>
           </div>
-          <div class="flex">
+          <div class="flex flex-col md:flex-row gap-5">
             <div class="bg-gray-100 w-14 h-14 rounded-full"></div>
             <div class="flex flex-col"> 
               <h1 class="text-xl text-white ">teste</h1>
-              <p class="text-md w-2/3">Lorem ipsum dolor sit amet consectetur, adipit. Modi, voluptates porro accusantium</p>
+              <p class="text-sm md:text-md w-full md:w-3/4">Lorem ipsum dolor sit amet consectetur, adipit. Modi, voluptates porro accusantium</p>
             </div>
         </div>
       </div>
@@ -302,13 +302,13 @@
 </div>
 
 
-<div id="contato" class="min-h-screen pattern bg-blue-500   w-full flex justify-center items-center flex-col -mt-5 md:mt-10">
-  <div class="flex justify-center flex-col">
-    <h1 class="text-blue-500 text-3xl md:text-4xl font-bold mb-1 md:mb-4 ">
-      Entre em contato
-    </h1>
-    <p class="text-white mb-14 text-center">Formulario para contato</p>
-  </div>
+<div id="contato" class="min-h-screen pattern bg-blue-500 mt-20   w-full flex justify-center items-center flex-col -mt-5 md:mt-10">
+  <div class="justify-center items-center flex flex-col">
+    <h1 class="text-white text-3xl md:text-4xl font-bold mb-1 md:mb-4 " id="agendamento">
+        Especialistas
+      </h1>
+      <p class="text-gray-100 mb-14 text-center">Especialistas disponiveis na clínica</p>
+      </div>
   <div class="md:w-1/2 w-2/3">
     
     <label for="input-group-1" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white"></label>
