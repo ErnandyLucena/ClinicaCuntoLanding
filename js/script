@@ -22,19 +22,20 @@
           }
         });
 
-        const cardData = [
-          { medico: "BRUNO MIOTTO DE CUNTO", especialidade: "ORTOPEDIA E TRAUMATOLOGIA", especialista: "OMBRO E COTOVELO" },
-          { medico: "RICARDO DEBUSSOLO DE LIMA", especialidade: "ORTOPEDIA E TRAUMATOLOGIA", especialista: "OMBRO E COTOVELO" },
-          { medico: "VINICIUS PAGLIARO FRANCO", especialidade: "ORTOPEDIA E TRAUMATOLOGIA", especialista: "JOELHO" },
-          { medico: "THIAGO JARDIM DO NASCIMENTO", especialidade: "ORTOPEDIA E TRAUMATOLOGIA", especialista: "MÃO" },
-          { medico: "CAIO MARCELO SPADAFORA", especialidade: "NEUROLOGIA", especialista: "COLUNA" },
-          { medico: "MARCELO SOGABE", especialidade: "NEUROLOGIA", especialista: "CLÍNICO/CRIANÇA COM AUTISMO" },
-          { medico: "CASSIO NEVES DA SILVA", especialidade: "NEUROLOGIA", especialista: "COLUNA" },
-          { medico: "ANA CLAUDIA SAPUPO DE CUNTO", especialidade: "PEDIATRA/ULTRASSOM", especialista: "" },
-          { medico: "MARIA APARECIDA DE ARAUJO", especialidade: "PSICÓLOGA", especialista: "CRIANÇA COM AUTISMO" },
-          { medico: "SIMONE SANTOS", especialidade: "PSICANALISTA", especialista: "" },
-          { medico: "ALEXANDRE MORETTI", especialidade: "OFTALMO", especialista: "" }
-        ];
+       const cardData = [
+  { medico: "Bruno Miotto de Cunto", especialidade: "Ortopedia e Traumatologia", especialista: "Ombro e Cotovelo" },
+  { medico: "Ricardo Debussolo de Lima", especialidade: "Ortopedia e Traumatologia", especialista: "Ombro e Cotovelo" },
+  { medico: "Vinicius Pagliaro Franco", especialidade: "Ortopedia e Traumatologia", especialista: "Joelho" },
+  { medico: "Thiago Jardim do Nascimento", especialidade: "Ortopedia e Traumatologia", especialista: "Mão" },
+  { medico: "Caio Marcelo Spadafora", especialidade: "Neurologia", especialista: "Coluna" },
+  { medico: "Marcelo Sogabe", especialidade: "Neurologia", especialista: "Clínico/Criança com Autismo" },
+  { medico: "Cassio Neves da Silva", especialidade: "Neurologia", especialista: "Coluna" },
+  { medico: "Ana Claudia Sapupo de Cunto", especialidade: "Pediatra/Ultrassom", especialista: "" },
+  { medico: "Maria Aparecida de Araujo", especialidade: "Psicóloga", especialista: "Criança com Autismo" },
+  { medico: "Simone Santos", especialidade: "Psicanalista", especialista: "" },
+  { medico: "Alexandre Moretti", especialidade: "Oftalmo", especialista: "" }
+];
+
         
         function renderCards() {
           const container = document.getElementById("cards-container");
@@ -42,16 +43,20 @@
         
           cardData.forEach((data, index) => {
             const card = document.createElement("div");
-            card.className = `relative card bg-white border border-gray-300 shadow-lg rounded-xl overflow-hidden p-6 text-center transition-all duration-300 hover:shadow-xl ${index >= 8 ? 'hidden' : ''}`;
+            card.className = `relative card bg-white border border-gray-300 shadow-lg rounded-xl overflow-visible p-6 text-center transition-all duration-300 hover:shadow-xl ${index >= 8 ? 'hidden' : ''}`;
             card.dataset.index = index;
             card.innerHTML = `
-              <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-blue-500 rounded-full shadow-md"></div>
-              <div class="relative pt-10">
-                <h3 class="text-xl font-bold text-gray-900">${data.medico}</h3>
-                <p class="text-gray-600 mt-2 text-md">${data.especialidade} ${data.especialista ? `- ${data.especialista}` : ""}</p>
+              <div class="absolute -top-7 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-blue-500 rounded-full shadow-lg border-4 border-white flex items-center justify-center z-10">
+                 <img src="assets/medico-icon.png" alt="Image" class="w-10 h-10">
+              </div>
+              <div class="relative mt-8">
+                <h3 class="text-xl font-bold text-blue-600 text-gray-900">${data.medico}</h3>
+                <p class="text-gray-600 text-sm">${data.especialidade} ${data.especialista ? `- ${data.especialista}` : ""}</p>
               </div>
             `;
             container.appendChild(card);
+            
+            
           });
         }
         
